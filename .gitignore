@@ -4,3 +4,18 @@
 *.jar
 *.war
 *.ear
+
+# IntelliJ Idea #
+*.iml
+/.idea
+
+# Eclipse #
+.classpath
+.project
+
+# Maven #
+/target
+
+# Sublime Text #
+*.sublime-project
+*.sublime-workspace
