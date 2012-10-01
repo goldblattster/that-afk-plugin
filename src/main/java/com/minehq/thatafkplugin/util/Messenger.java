@@ -13,8 +13,6 @@ import org.bukkit.entity.Player;
  * @author Sushi
  */
 public class Messenger {
-    private static String chatPrefix = ChatColor.GRAY + "[" + ChatColor.YELLOW + "ThatAFKPlugin" + ChatColor.GRAY + "] "
-            + ChatColor.RESET;
 
     /**
      * Send a message to a CommandSender (can be
@@ -31,6 +29,8 @@ public class Messenger {
             throw new NullPointerException("I tried to send a message to a null player. Oops.");
         } else {
             if (prefixed) {
+                String chatPrefix = ChatColor.GRAY + "[" + ChatColor.YELLOW + "ThatAFKPlugin" + ChatColor.GRAY + "] "
+                        + ChatColor.RESET;
                 sender.sendMessage(chatPrefix + message);
             } else {
                 sender.sendMessage(message);
